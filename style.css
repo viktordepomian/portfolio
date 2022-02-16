@@ -1,33 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Roboto:wght@300;400;700;900&display=swap');
+
 *{
     margin: 0;
-    padding: 0;
+}
+
+*, *::before, *::after{
     box-sizing: border-box;
 }
 
-:root{
-
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+    font-style: italic;
 }
 
 body{
-    width: 100%;
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
     font-size: 16px;
+    background: black;
+    color: #DCDCDC;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
-    width: 100%;
-    background: black;
     height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'info image';
 }
 
 #intro-part{
-    flex: 1;
-    padding: 3rem 7rem;
+    grid-area: info;
+    padding: 3rem;
+}
+
+.intro-part__title{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 5.6rem;
+}
+
+.intro-part__desc{
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin-top: 3.5rem;
 }
 
 #picture-part{
-    flex: 1;
+    background-color: white;
+    grid-area: image;
+}
+
+@media screen and (max-width: 576px){
+    header{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'info'
+        'image';
+    }
 }
