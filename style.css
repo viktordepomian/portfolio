@@ -34,7 +34,10 @@ header{
 
 #intro-part{
     grid-area: info;
-    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8rem;
 }
 
 .intro-part__title{
