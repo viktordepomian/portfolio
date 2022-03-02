@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -29,7 +33,6 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'info image';
     height: 100vh;
-    position: relative;
 }
 
 #intro-part{
@@ -37,7 +40,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 8rem;
+    padding: 0 6rem;
 }
 
 .intro-part__title{
@@ -51,66 +54,59 @@ header{
     margin-top: 3.5rem;
 }
 
-.bg{
-    position: absolute;
-    z-index: 1;
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    animation: pulse 1.2s ease infinite;
-    background: #231427;
-}
-
-.arrow-down{
-    position: absolute;
-    z-index: 2;
-    width: 4.5rem;
-    height: 4.5rem;
-    background: #231427;
-    background-size: 5rem;
-    border-radius: 50%;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: white;
-}
-
-@keyframes pulse {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      opacity: 0.3;
-    }
-    100% {
-      transform: scale(1.5);
-      opacity: 0;
-    }
-  }
-
 #picture-part{
     grid-area: image;
-    width: 100%;
-    height: 100%;
-    background: url(images/img1.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    overflow: hidden;
+}
+
+#picture-part img{
+    max-width: 100%;
+    height: auto;
+}
+
+main{
+    height: 40rem;
+    display: grid;
+    margin-top: 15rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'left right';
+}
+
+.left-container{
+    grid-area: left;
+    padding: 6rem;
+}
+
+.right-container{
+    grid-area: right;
+}
+
+.right-container img{
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 576px){
     header{
         grid-template-columns: 1fr;
-        grid-template-areas:
+        grid-template-areas: 
         'info'
         'image';
+        height: auto;
     }
 
-    #picture-part{
-        height: 32rem;
+    #intro-part{
+        margin: 5rem 0;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'left'
+        'right';
+    }
+
+    .left-container{
+        padding: 4rem;
     }
 }
