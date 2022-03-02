@@ -15,17 +15,18 @@ html{
 a{
     text-decoration: none;
     color: inherit;
-    font-weight: 300;
     font-style: italic;
 }
 
 body{
     max-width: 100%;
     margin: auto;
-    font-size: 16px;
+    font-size: 20px;
     background: #0B040D;
     color: #DCDCDC;
     font-family: 'Roboto', sans-serif;
+    line-height: 2.3rem;
+    font-weight: 300;
 }
 
 header{
@@ -49,8 +50,6 @@ header{
 }
 
 .intro-part__desc{
-    font-weight: 300;
-    line-height: 1.8rem;
     margin-top: 3.5rem;
 }
 
@@ -65,20 +64,20 @@ header{
 }
 
 main{
-    height: 40rem;
-    display: grid;
     margin-top: 15rem;
+}
+
+main .example{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'left right';
 }
 
 .left-container{
-    grid-area: left;
-    padding: 6rem;
+    padding: 6rem 3rem 6rem 6rem;
 }
 
 .right-container{
-    grid-area: right;
+    padding-right: 6rem;
 }
 
 .right-container img{
@@ -86,7 +85,7 @@ main{
     height: auto;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 1140px){
     header{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -99,14 +98,24 @@ main{
         margin: 5rem 0;
     }
 
+    #picture-part img{
+        width: 100%;
+    }
+
     main{
+        margin-top: 5rem;
+    }
+
+    main .example{
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        'left'
-        'right';
     }
 
     .left-container{
-        padding: 4rem;
+        padding: 2rem;
+    }
+
+    .right-container{
+        padding: 2rem;
+        margin: auto;
     }
 }
