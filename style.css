@@ -21,11 +21,10 @@ a{
 body{
     max-width: 100%;
     margin: auto;
-    font-size: 20px;
+    font-size: 1.375rem;
     background: #0B040D;
     color: #DCDCDC;
     font-family: 'Roboto', sans-serif;
-    line-height: 2.3rem;
     font-weight: 300;
 }
 
@@ -46,11 +45,12 @@ header{
 
 .intro-part__title{
     font-family: 'Dancing Script', sans-serif;
-    font-size: 5.6rem;
+    font-size: 6.5rem;
 }
 
 .intro-part__desc{
-    margin-top: 3.5rem;
+    margin-top: 6rem;
+    line-height: 2.3rem;
 }
 
 #picture-part{
@@ -63,17 +63,33 @@ header{
     height: auto;
 }
 
-main{
-    margin-top: 15rem;
-}
-
 main .example{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 13rem;
+}
+
+.colorOne .work__title{
+    color: rgb(67, 170, 67);
 }
 
 .left-container{
     padding: 6rem 3rem 6rem 6rem;
+}
+
+.left-container .work__what-was-created{
+    margin-top: .8rem;
+}
+
+.left-container .work__wow-factor{
+    margin-top: 3.8rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.left-container .work__description{
+    margin-top: 3.8rem;
+    line-height: 2.3rem;
 }
 
 .right-container{
@@ -96,18 +112,20 @@ main .example{
 
     #intro-part{
         margin: 5rem 0;
+        padding: 2rem;
+    }
+
+    .intro-part__desc{
+        margin-top: 3rem;
     }
 
     #picture-part img{
         width: 100%;
     }
 
-    main{
-        margin-top: 5rem;
-    }
-
     main .example{
         grid-template-columns: 1fr;
+        margin-top: 3rem;
     }
 
     .left-container{
