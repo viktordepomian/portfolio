@@ -22,7 +22,7 @@ body{
     max-width: 100%;
     margin: auto;
     font-size: 1.375rem;
-    background: #0B040D;
+    background: #19091d;
     color: #DCDCDC;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -66,19 +66,49 @@ header{
 main .example{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 13rem;
+    margin-top: 10rem;
 }
 
-.colorOne .work__title{
+.one .work__title{
     color: rgb(67, 170, 67);
 }
 
+.two .work__title{
+    color: rgb(116, 180, 116);
+}
+
+.three .work__title{
+    color: rgb(173, 173, 231);
+}
+
+.four .work__title{
+    color: rgb(71, 71, 192);
+}
+
+.five .work__title{
+    color: rgb(202, 73, 14);
+}
+
+.six .work__title{
+    color: rgb(133, 50, 133);
+}
+
+.seven .work__title{
+    color: rgb(180, 104, 180);
+}
+
+/* WORK EXAMPLES INFO */
+
 .left-container{
-    padding: 6rem 3rem 6rem 6rem;
+    padding: 6rem 5rem 6rem 6rem;
 }
 
 .left-container .work__what-was-created{
     margin-top: .8rem;
+}
+
+.left-container .work__url{
+    margin-top: 0.3rem;
 }
 
 .left-container .work__wow-factor{
@@ -92,6 +122,10 @@ main .example{
     line-height: 2.3rem;
 }
 
+/**********************/
+
+/* WORK EXAMPLES IMAGE */
+
 .right-container{
     padding-right: 6rem;
 }
@@ -99,6 +133,14 @@ main .example{
 .right-container img{
     max-width: 100%;
     height: auto;
+}
+
+/**********************/
+
+footer{
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 1140px){
