@@ -22,10 +22,18 @@ body{
     max-width: 100%;
     margin: auto;
     font-size: 1.375rem;
-    background: #19091d;
+    background: #120614;
     color: #DCDCDC;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+.skills-window{
+    
+}
+
+.hidden{
+    /* display: none; */
 }
 
 header{
@@ -40,7 +48,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 6rem;
+    padding: 0 10rem;
 }
 
 .intro-part__title{
@@ -51,6 +59,31 @@ header{
 .intro-part__desc{
     margin-top: 6rem;
     line-height: 2.3rem;
+}
+
+.intro-part__extra-stuff{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.intro-part__btn{
+    cursor: pointer;
+    border: 1px solid #DCDCDC;
+    border-radius: .3rem;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+}
+
+.intro-part__btn a{
+    font-style: normal;
+}
+
+.intro-part__btn:hover{
+    background: #DCDCDC;
+    color: black;
 }
 
 #picture-part{
@@ -100,7 +133,7 @@ main .example{
 /* WORK EXAMPLES INFO */
 
 .left-container{
-    padding: 6rem 5rem 6rem 6rem;
+    padding: 6rem 5rem 6rem 10rem;
 }
 
 .left-container .work__what-was-created{
@@ -127,7 +160,7 @@ main .example{
 /* WORK EXAMPLES IMAGE */
 
 .right-container{
-    padding-right: 6rem;
+    padding-right: 10rem;
 }
 
 .right-container img{
