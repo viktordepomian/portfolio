@@ -26,10 +26,29 @@ body{
     color: #DCDCDC;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    position: relative;
 }
 
 .skills-window{
-    
+    background: grey;
+    display: flex;
+    gap: 4rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills-window__title{
+    font-size: 1.3rem;
+}
+
+.skills-window ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
 }
 
 .hidden{
