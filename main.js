@@ -1,0 +1,1 @@
+const skillsBtn = document.querySelector('.intro-part__btn');
