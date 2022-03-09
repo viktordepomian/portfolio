@@ -91,14 +91,29 @@ header{
 
 main .skills{
     display: flex;
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding: 0 10rem;
+    gap: 14rem;
+    justify-content: center;
+}
+
+main .skills h3{
+    text-decoration: underline;
+}
+
+main .skills ul{
+    padding-left: 1.25rem;
+    padding-top: 1.5rem;
+}
+
+main .skills ul li:not(:first-child){
+    margin-top: .4rem;
 }
 
 main .example{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .one .work__title{
