@@ -145,6 +145,10 @@ main .example{
     color: rgb(180, 104, 180);
 }
 
+.eight .work__title{
+    color: rgb(66, 223, 113);
+}
+
 /* WORK EXAMPLES INFO */
 
 .left-container{
@@ -181,6 +185,11 @@ main .example{
 .right-container img{
     max-width: 100%;
     height: auto;
+}
+
+.behance-link{
+    text-decoration: underline;
+    font-style: normal;
 }
 
 /**********************/
