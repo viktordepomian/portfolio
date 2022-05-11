@@ -44,6 +44,10 @@ header{
     padding: 0 10rem;
 }
 
+#intro-part a{
+    font-style: normal;
+}
+
 .intro-part__title{
     font-family: 'Dancing Script', sans-serif;
     font-size: 6.5rem;
@@ -73,10 +77,6 @@ header{
     padding: .5rem 2rem;
     text-transform: uppercase;
     transition: all .25s ease-in-out;
-}
-
-.intro-part__btn a{
-    font-style: normal;
 }
 
 .intro-part__btn:hover{
@@ -161,6 +161,14 @@ main .example{
 
 .left-container .work__url{
     margin-top: 0.3rem;
+}
+
+.left-container .work__url a{
+    transition: all .3s ease-in-out;
+}
+
+.left-container .work__url a:hover{
+    color: white;
 }
 
 .left-container .work__wow-factor{

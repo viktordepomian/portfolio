@@ -1,1 +1,3 @@
-const skillsBtn = document.querySelector('.intro-part__btn');
+document.getElementById('footer').addEventListener('click', () => {
+    document.body.scrollIntoView(false);
+});
