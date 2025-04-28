@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+    .font-arvo {
+        font-family: 'Arvo', serif;
+    }
+  
+    .font-noto-jp {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+  }
+  
